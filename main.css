@@ -24,12 +24,12 @@
   align-items: center;
 }
 
-#ts-logo {
+#header-img {
   padding: 5px;
   width: 200px;
 }
 
-#nav-menu {
+#nav-bar {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
@@ -63,11 +63,16 @@
     grid-template-columns: 3fr 1fr;
   }
 
-  #ts-logo {
+  #header-img {
     width: 250px;
   }
 
-  #nav-menu {
+  #nav-bar {
     grid-template-columns: 1fr;
+    margin-bottom: 10px;
+  }
+
+  .nav-item {
+    padding: 5px;
   }
 }
