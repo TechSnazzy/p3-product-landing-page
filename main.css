@@ -4,7 +4,7 @@
 }
 
 #main {
-  background: #FFD23F; /* Sunglow */
+  background: #ffd23f; /* Sunglow */
   display: grid;
   grid-template-columns: 1fr;
   width: 80%;
@@ -12,15 +12,21 @@
 }
 
 #header {
-  background: #3BCEAC; /* Caribbean Green */
+  background: #3bceac; /* Caribbean Green */
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin-bottom: 10px;;
+  margin-bottom: 10px;
 }
 
 #header-image {
-  padding: 10px;
-  width: 50px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#ts-logo {
+  padding: 5px;
+  width: 200px;
 }
 
 #nav-menu {
@@ -29,7 +35,7 @@
 }
 
 .nav-item {
-  background: #EE4266; /* Paradise Pink */
+  background: #ee4266; /* Paradise Pink */
   height: 100%;
   display: grid;
   justify-content: center;
@@ -37,17 +43,31 @@
 }
 
 .nav-item:hover {
-  background: #0EAD69; /* GO Green */
+  background: #0ead69; /* GO Green */
 }
 
 .nav-item a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 #about {
-  background: #540D6E; /* Blue Violet Color Wheel */
+  background: #540d6e; /* Blue Violet Color Wheel */
   color: white;
   padding: 10px;
+}
+
+@media (max-width: 800px) {
+  #header {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  #ts-logo {
+    width: 250px;
+  }
+
+  #nav-menu {
+    grid-template-columns: 1fr;
+  }
 }
